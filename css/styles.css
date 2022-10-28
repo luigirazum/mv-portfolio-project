@@ -94,7 +94,7 @@ li {
 }
 
 .headline-bg-image {
-  background-image: url("/imgs/headline-bg-illustration.svg");
+  background-image: url('../imgs/headline-bg-illustration.svg');
   background-repeat: no-repeat;
   transform: rotate(165deg) scale(1);
   position: absolute;
