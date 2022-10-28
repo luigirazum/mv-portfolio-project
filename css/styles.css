@@ -16,10 +16,26 @@
   background-color: #3c3a39;
   color: #fff;
   height: 48px;
+  padding: 4px 12px;
+}
+
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 12px;
+  height: 40px;
+  margin-right: 8px;
+}
+
+.navbar a {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 10px 12px;
+  color: #fff;
+  text-decoration: none;
 }
 
 p {
@@ -28,20 +44,6 @@ p {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-}
-
-.header p {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  padding: 10px 12px;
-}
-
-.header nav {
-  height: 40px;
-  margin-right: 8px;
 }
 
 .icon {
