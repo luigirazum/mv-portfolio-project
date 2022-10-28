@@ -8,9 +8,40 @@
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+              margin: 0;
 }
 
 /* Default media - Mobile first */
+.header {
+  background-color: #3C3A39;
+  color: #FFF;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+}
+
+.header p {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 10px 12px;
+}
+
+.header nav {
+  height: 40px;
+  margin-right: 8px;
+}
+
+.header .icon {
+  height: 24px;
+  width: 24px;
+  margin: 8px;
+}
+
 
 
 /* Media for larger devices */
