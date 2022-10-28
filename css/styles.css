@@ -3,25 +3,31 @@
 
 /* Adjusting the box size to use border-box */
 *,
-*:before,
-*:after,
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-              margin: 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 /* Default media - Mobile first */
 .header {
-  background-color: #3C3A39;
-  color: #FFF;
+  background-color: #3c3a39;
+  color: #fff;
   height: 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 12px;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-style: regular;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 .header p {
@@ -45,7 +51,7 @@
 }
 
 .headline {
-  background-color: #1C1A19;
+  background-color: #1c1a19;
   color: #fff;
   height: 100vh;
   padding: 120px 24px;
@@ -61,7 +67,7 @@ h1 {
   line-height: 64px;
   letter-spacing: 0.37px;
   font-weight: 400;
-  color: #FF6B00;
+  color: #ff6b00;
   margin: 0;
 }
 
@@ -71,15 +77,7 @@ h2 {
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
-  color: #FFF5E1;
-}
-
-p {
-  font-family: 'Poppins', sans-serif;
-  font-style: regular;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  color: #fff5e1;
 }
 
 ul {
@@ -106,5 +104,7 @@ li {
 
 /* Media for larger devices */
 @media all and (min-width: 600px) {
-
+  body {
+    color: #000000;
+  }
 }
