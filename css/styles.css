@@ -105,6 +105,6 @@ li {
 /* Media for larger devices */
 @media all and (min-width: 600px) {
   body {
-    color: #000000;
+    color: #000;
   }
 }
