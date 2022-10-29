@@ -1,5 +1,5 @@
 /* Import the Google Fonts used in this project */
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500&family=Poppins&family=Roboto:wght@700&display=swap');
 
 /* Adjusting the box size to use border-box */
 *,
@@ -9,6 +9,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 /* Default media - Mobile first */
@@ -62,7 +63,7 @@ p {
   row-gap: 12px;
 }
 
-h1 {
+.headline h1 {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-size: 56px;
@@ -73,7 +74,7 @@ h1 {
   margin: 0;
 }
 
-h2 {
+.headline h2 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-size: 24px;
@@ -82,12 +83,12 @@ h2 {
   color: #fff5e1;
 }
 
-ul {
+.headline ul {
   display: flex;
   padding: 0;
 }
 
-li {
+.headline li {
   list-style: none;
   height: 40px;
   width: 40px;
@@ -103,6 +104,9 @@ li {
   left: 70%;
   top: 50%;
 }
+
+/* Styles for Works Section */
+
 
 /* Media for larger devices */
 @media all and (min-width: 600px) {
