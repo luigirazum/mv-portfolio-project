@@ -201,9 +201,10 @@ li.tag {
 
 .btn:hover {
   background-color: #fff5e1;
-  color:#ff6b00;
+  color: #ff6b00;
   border: 1px solid #f55800;
 }
+
 /* Featured Work Card */
 div.featured-work {
   margin-bottom: 24px;
@@ -217,8 +218,9 @@ div.featured-work {
 /* Works Cards */
 div.card-works {
   height: 386px;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%),
-  url(../imgs/placeholder-img.png);
+  background:
+    linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%),
+    url(../imgs/placeholder-img.png);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -247,7 +249,7 @@ li.tag:last-child {
   margin-right: 0;
 }
 
-.card-works .btn{
+.card-works .btn {
   display: block;
   text-align: center;
 }
@@ -281,7 +283,7 @@ div.about {
   font-size: 72px;
   line-height: 88px;
   letter-spacing: 0.37px;
-  color: #ff6b00
+  color: #ff6b00;
 }
 
 .about p {
@@ -292,6 +294,7 @@ div.about {
 .about-me hr {
   margin: 56px 24px;
 }
+
 .my-skills {
   padding: 120px 24px;
   display: flex;
@@ -327,9 +330,9 @@ li.skills-title {
   list-style-image: url(../imgs/skill-bullet.png);
 }
 
-.lang-card-skills>ol>li,
-.frame-card-skills>ol>li,
-.skill-card-skills>ol>li {
+.lang-card-skills > ol > li,
+.frame-card-skills > ol > li,
+.skill-card-skills > ol > li {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 22px;
