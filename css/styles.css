@@ -1,5 +1,5 @@
 /* Import the Google Fonts used in this project */
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500&family=Poppins&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;700&family=Poppins&family=Roboto:wght@700&display=swap');
 
 /* Adjusting the box size to use border-box */
 *,
@@ -13,6 +13,8 @@
 }
 
 /* Default media - Mobile first */
+
+/* Styles for NavBar Section */
 .header {
   background-color: #3c3a39;
   color: #fff;
@@ -39,7 +41,8 @@
   text-decoration: none;
 }
 
-p {
+/* Styles for Headline Section */
+.headline p {
   font-family: 'Poppins', sans-serif;
   font-style: regular;
   font-size: 16px;
@@ -107,6 +110,233 @@ p {
 
 /* Styles for Works Section */
 
+section.recent-works {
+  /* background-color: #3c3a39; */
+  padding: 120px 24px;
+}
+
+div.works {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+div.title {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+.recent-works hr {
+  border: 1px solid #212121;
+}
+
+.recent-works img {
+  margin-bottom: 12px;
+}
+
+h2.recent-works,
+h3.title-post,
+.about h2 {
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+}
+
+h2.recent-works {
+  font-size: 40px;
+  line-height: 52px;
+  color: #1c1a19;
+}
+
+h3.title-post {
+  color: #091e42;
+  font-size: 32px;
+  line-height: 44px;
+  vertical-align: top;
+}
+
+p.text-post {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+div.right-block {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+ul.tags {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+li.tag {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  list-style: none;
+  height: 40px;
+  padding: 10px 12px;
+  margin-right: 12px;
+}
+
+.btn {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff6b00;
+  height: 48px;
+  padding: 12px;
+}
+
+.btn:hover {
+  background-color: #fff5e1;
+  color:#ff6b00;
+  border: 1px solid #f55800;
+}
+/* Featured Work Card */
+div.featured-work {
+  margin-bottom: 24px;
+}
+
+.featured-work li.tag {
+  color: #091e42;
+  border: 1px solid #8993a4;
+}
+
+/* Works Cards */
+div.card-works {
+  height: 386px;
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%),
+  url(../imgs/placeholder-img.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card-works div.right-block {
+  padding: 8px 16px;
+  margin-bottom: 14px;
+}
+
+.card-works h3.title-post {
+  color: #fff;
+}
+
+.card-works p.text-post {
+  color: #fff;
+}
+
+.card-works li.tag {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.24);
+  display: inline-block;
+}
+
+li.tag:last-child {
+  margin-right: 0;
+}
+
+.card-works .btn{
+  display: block;
+  text-align: center;
+}
+
+/* Styles for About Me Section */
+section.about-me {
+  background-color: #1c1a19;
+  display: flex;
+  flex-direction: column;
+}
+
+div.about {
+  height: 563px;
+  padding: 120px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-bg-img {
+  background-image: url('../imgs/about-mebg-image.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 259px;
+  width: 160px;
+  right: 0;
+  top: 4380px;
+}
+
+.about h2 {
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00
+}
+
+.about p {
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.about-me hr {
+  margin: 56px 24px;
+}
+.my-skills {
+  padding: 120px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.my-skills li {
+  color: #fff;
+  list-style: none;
+}
+
+li.lang-title,
+li.frame-title,
+li.skills-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+li.lang-title {
+  list-style-image: url(../imgs/lang-bullet.png);
+}
+
+li.frame-title {
+  list-style-image: url(../imgs/frame-bullet.png);
+}
+
+li.skills-title {
+  list-style-image: url(../imgs/skill-bullet.png);
+}
+
+.lang-card-skills>ol>li,
+.frame-card-skills>ol>li,
+.skill-card-skills>ol>li {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 42.67px;
+  padding: 12px 0;
+  text-align: center;
+}
 
 /* Media for larger devices */
 @media all and (min-width: 600px) {
