@@ -374,9 +374,11 @@ li.skills-title {
   font-size: 15px;
   line-height: 24px;
 }
+
 .contact-form input::placeholder {
   color: #979493;
 }
+
 .contact-form #message {
   padding: 12px;
   border: none;
@@ -387,9 +389,11 @@ li.skills-title {
   font-size: 15px;
   line-height: 24px;
 }
+
 .contact-form #message::placeholder {
   color: #3c3a39;
 }
+
 .contact-form #message::placeholder {
   color: #3c3a39;
 }
@@ -414,20 +418,24 @@ li.skills-title {
   background-color: #fff5e1;
   color: #f55800;
 }
+
 .contact-form #send:active {
   background-color: #e05304;
   color: #ffffff;
 }
+
 .contact-form #send:disabled {
   background-color: #f4f1f0;
   color: #5b5957;
   border: none;
 }
+
 #footer {
   border-top: 1px solid #dfe1e6;
   padding: 16px 0;
   margin-bottom: 10px;
 }
+
 #footer > ul {
   display: flex;
   justify-content: center;
