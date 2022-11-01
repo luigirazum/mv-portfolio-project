@@ -407,11 +407,22 @@ li.skills-title {
   line-height: 24px;
   display: inline-block;
   margin: 0 auto;
+  cursor: pointer;
 }
 
-.contact-form #send::hover {
+.contact-form #send:hover {
   border: 1px solid #f55800;
   background-color: #fff5e1;
+  color: #f55800;
+}
+.contact-form #send:active {
+  background-color: #e05304;
+  color: #ffffff;
+}
+.contact-form #send:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+  border: none;
 }
 /* Media for larger devices */
 @media all and (min-width: 600px) {
