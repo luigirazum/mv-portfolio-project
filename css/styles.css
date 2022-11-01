@@ -1,5 +1,5 @@
 /* Import the Google Fonts used in this project */
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;700&family=Poppins&family=Roboto:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;700&family=Poppins&family=Roboto:wght@700&display=swap");
 
 /* Adjusting the box size to use border-box */
 *,
@@ -31,7 +31,7 @@
 }
 
 .navbar a {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -43,7 +43,7 @@
 
 /* Styles for Headline Section */
 .headline p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: regular;
   font-size: 16px;
   line-height: 24px;
@@ -67,7 +67,7 @@
 }
 
 .headline h1 {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-size: 56px;
   line-height: 64px;
@@ -78,7 +78,7 @@
 }
 
 .headline h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 24px;
   line-height: 32px;
@@ -98,7 +98,7 @@
 }
 
 .headline-bg-image {
-  background-image: url('../imgs/headline-bg-illustration.svg');
+  background-image: url("../imgs/headline-bg-illustration.svg");
   background-repeat: no-repeat;
   transform: rotate(165deg) scale(1);
   position: absolute;
@@ -138,7 +138,7 @@ div.title {
 h2.recent-works,
 h3.title-post,
 .about h2 {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-weight: 400;
 }
 
@@ -156,7 +156,7 @@ h3.title-post {
 }
 
 p.text-post {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -176,7 +176,7 @@ ul.tags {
 }
 
 li.tag {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
@@ -187,7 +187,7 @@ li.tag {
 }
 
 .btn {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -218,8 +218,11 @@ div.featured-work {
 /* Works Cards */
 div.card-works {
   height: 386px;
-  background:
-    linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%),
+  background: linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgba(38, 38, 38, 0.9) 61.94%
+    ),
     url(../imgs/placeholder-img.png);
   display: flex;
   flex-direction: column;
@@ -270,7 +273,7 @@ div.about {
 }
 
 .about-bg-img {
-  background-image: url('../imgs/about-mebg-image.png');
+  background-image: url("../imgs/about-mebg-image.png");
   background-repeat: no-repeat;
   position: absolute;
   height: 259px;
@@ -310,7 +313,7 @@ div.about {
 li.lang-title,
 li.frame-title,
 li.skills-title {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -333,12 +336,57 @@ li.skills-title {
 .lang-card-skills > ol > li,
 .frame-card-skills > ol > li,
 .skill-card-skills > ol > li {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 42.67px;
   padding: 12px 0;
   text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  padding: 0 24px;
+  gap: 58px;
+}
+
+.contact-form .title {
+  color: #172b4d;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+.contact-form .form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-form input {
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  padding: 15px 16px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+.contact-form input::placeholder {
+  color: #979493;
+}
+.contact-form #message {
+  padding: 12px;
+  border: none;
+  background: #fbf8f7;
+}
+.contact-form #message::placeholder {
+  color: #3c3a39;
+}
+.contact-form #message::placeholder {
+  color: #3c3a39;
 }
 
 /* Media for larger devices */
