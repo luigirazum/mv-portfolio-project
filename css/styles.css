@@ -347,8 +347,7 @@ li.skills-title {
 .contact-form {
   display: flex;
   flex-direction: column;
-  margin-top: 120px;
-  padding: 0 24px;
+  padding: 120px 24px;
   gap: 58px;
 }
 
@@ -424,6 +423,20 @@ li.skills-title {
   color: #5b5957;
   border: none;
 }
+#footer {
+  border-top: 1px solid #dfe1e6;
+  padding: 16px 0;
+  margin-bottom: 10px;
+}
+#footer > ul {
+  display: flex;
+  justify-content: center;
+}
+
+#footer li {
+  list-style: none;
+}
+
 /* Media for larger devices */
 @media all and (min-width: 600px) {
   body {
