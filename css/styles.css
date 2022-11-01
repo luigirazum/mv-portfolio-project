@@ -17,7 +17,7 @@
 /* Styles for NavBar Section */
 .header {
   background-color: #3c3a39;
-  color: #fff;
+  color: #ffffff;
   height: 48px;
   padding: 4px 12px;
 }
@@ -37,7 +37,7 @@
   font-size: 18px;
   line-height: 24px;
   padding: 10px 12px;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -58,7 +58,7 @@
 
 .headline {
   background-color: #1c1a19;
-  color: #fff;
+  color: #ffffff;
   height: 100vh;
   padding: 120px 24px;
   display: flex;
@@ -195,7 +195,7 @@ li.tag {
   line-height: 24px;
   letter-spacing: 1px;
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   background-color: #ff6b00;
   height: 48px;
   padding: 12px;
@@ -232,15 +232,15 @@ div.card-works {
 }
 
 .card-works h3.title-post {
-  color: #fff;
+  color: #ffffff;
 }
 
 .card-works p.text-post {
-  color: #fff;
+  color: #ffffff;
 }
 
 .card-works li.tag {
-  color: #fff;
+  color: #ffffff;
   background-color: rgba(255, 255, 255, 0.24);
   display: inline-block;
 }
@@ -287,7 +287,7 @@ div.about {
 }
 
 .about p {
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 24px;
 }
 
@@ -303,7 +303,7 @@ div.about {
 }
 
 .my-skills li {
-  color: #fff;
+  color: #ffffff;
   list-style: none;
 }
 
