@@ -358,6 +358,7 @@ li.skills-title {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
+  text-align: center;
 }
 .contact-form .form {
   display: flex;
@@ -381,6 +382,11 @@ li.skills-title {
   padding: 12px;
   border: none;
   background: #fbf8f7;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
 }
 .contact-form #message::placeholder {
   color: #3c3a39;
@@ -389,6 +395,24 @@ li.skills-title {
   color: #3c3a39;
 }
 
+.contact-form #send {
+  padding: 12px;
+  background-color: #ff6b00;
+  border: none;
+  color: #fff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.contact-form #send::hover {
+  border: 1px solid #f55800;
+  background-color: #fff5e1;
+}
 /* Media for larger devices */
 @media all and (min-width: 600px) {
   body {
