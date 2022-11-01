@@ -17,7 +17,7 @@
 /* Styles for NavBar Section */
 .header {
   background-color: #3c3a39;
-  color: #ffffff;
+  color: #fff;
   height: 48px;
   padding: 4px 12px;
 }
@@ -37,7 +37,7 @@
   font-size: 18px;
   line-height: 24px;
   padding: 10px 12px;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -58,7 +58,7 @@
 
 .headline {
   background-color: #1c1a19;
-  color: #ffffff;
+  color: #fff;
   height: 100vh;
   padding: 120px 24px;
   display: flex;
@@ -195,7 +195,7 @@ li.tag {
   line-height: 24px;
   letter-spacing: 1px;
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
   background-color: #ff6b00;
   height: 48px;
   padding: 12px;
@@ -232,15 +232,15 @@ div.card-works {
 }
 
 .card-works h3.title-post {
-  color: #ffffff;
+  color: #fff;
 }
 
 .card-works p.text-post {
-  color: #ffffff;
+  color: #fff;
 }
 
 .card-works li.tag {
-  color: #ffffff;
+  color: #fff;
   background-color: rgba(255, 255, 255, 0.24);
   display: inline-block;
 }
@@ -287,7 +287,7 @@ div.about {
 }
 
 .about p {
-  color: #ffffff;
+  color: #fff;
   margin-bottom: 24px;
 }
 
@@ -303,7 +303,7 @@ div.about {
 }
 
 .my-skills li {
-  color: #ffffff;
+  color: #fff;
   list-style: none;
 }
 
@@ -330,9 +330,9 @@ li.skills-title {
   list-style-image: url(../imgs/skill-bullet.png);
 }
 
-.lang-card-skills>ol>li,
-.frame-card-skills>ol>li,
-.skill-card-skills>ol>li {
+.lang-card-skills > ol > li,
+.frame-card-skills > ol > li,
+.skill-card-skills > ol > li {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 22px;
@@ -396,7 +396,7 @@ li.skills-title {
   padding: 12px;
   background-color: #ff6b00;
   border: none;
-  color: #ffffff;
+  color: #fff;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -415,7 +415,7 @@ li.skills-title {
 
 .contact-form #send:active {
   background-color: #e05304;
-  color: #ffffff;
+  color: #fff;
 }
 
 .contact-form #send:disabled {
@@ -430,7 +430,7 @@ li.skills-title {
   margin-bottom: 10px;
 }
 
-#footer>ul {
+#footer > ul {
   display: flex;
   justify-content: center;
 }
