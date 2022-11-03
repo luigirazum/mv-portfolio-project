@@ -25,6 +25,13 @@
   align-items: center;
 }
 
+@media all and (min-width: 768px) {
+  .header {
+    height: 72px;
+    padding: 16px 9.8%;
+  }
+}
+
 .header a {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -44,21 +51,17 @@
   margin-right: 8px;
 }
 
+@media all and (min-width: 768px) {
+  .navbar {
+    display: none;
+  }
+}
+
 .navbar-desktop {
   display: none;
 }
 
-/* Media for larger devices */
 @media all and (min-width: 768px) {
-  .header {
-    height: 72px;
-    padding: 16px 9.8%;
-  }
-
-  .navbar {
-    display: none;
-  }
-
   .navbar-desktop {
     display: flex;
     font-family: "Inter";
@@ -80,6 +83,16 @@
   font-weight: 400;
 }
 
+@media all and (min-width: 768px) {
+  .headline p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
 .icon {
   height: 24px;
   width: 24px;
@@ -98,6 +111,25 @@
   overflow: hidden;
 }
 
+@media all and (min-width: 768px) {
+  .headline {
+    flex-direction: row;
+    padding: 192px 24px;
+    align-items: center;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .headline-content {
+    width: 50%;
+    order: 2;
+    margin-left: 44px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+}
+
 .headline h1 {
   font-family: "Crete Round", serif;
   font-style: normal;
@@ -109,6 +141,13 @@
   margin: 0;
 }
 
+@media all and (min-width: 768px) {
+  .headline h1 {
+    font-size: 64px;
+    line-height: 68px;
+  }
+}
+
 .headline h2 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -118,9 +157,25 @@
   color: #fff5e1;
 }
 
+@media all and (min-width: 768px) {
+  .headline h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+
 .headline ul {
   display: flex;
   padding: 0;
+}
+
+@media all and (min-width: 768px) {
+  .headline ul {
+    order: 1;
+    flex-direction: column;
+    margin-left: 6px;
+    align-self: center;
+  }
 }
 
 .headline li {
@@ -141,46 +196,6 @@
 }
 
 @media all and (min-width: 768px) {
-  .headline {
-    flex-direction: row;
-    padding: 192px 24px;
-    align-items: center;
-  }
-
-  .headline ul {
-    order: 1;
-    flex-direction: column;
-    margin-left: 6px;
-    align-self: center;
-  }
-
-  .headline-content {
-    width: 50%;
-    order: 2;
-    margin-left: 44px;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-  }
-
-  .headline h1 {
-    font-size: 64px;
-    line-height: 68px;
-  }
-
-  .headline h2 {
-    font-size: 26px;
-    line-height: 32px;
-  }
-
-  .headline p {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-  }
-
   .headline-bg-image {
     position: absolute;
     transform: rotate(165deg) scale(1.5);
@@ -192,13 +207,13 @@
 /* Styles for Works Section */
 
 section.recent-works {
-  /* background-color: #3c3a39; */
   padding: 120px 24px;
 }
 
-div.works {
-  display: grid;
-  grid-template-columns: 1fr;
+@media all and (min-width: 768px) {
+  section.recent-works {
+    padding: 130px 24px;
+  }
 }
 
 div.title {
@@ -208,12 +223,39 @@ div.title {
   margin-bottom: 80px;
 }
 
+@media all and (min-width: 768px) {
+  div.title {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 114px;
+  }
+}
+
 .recent-works hr {
   border: 1px solid #212121;
+  flex-grow: 1;
+}
+
+div.works {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+@media all and (min-width: 768px) {
+  div.works {
+    grid-template-columns: 33% 33% 33%;
+    gap: 10px;
+  }
 }
 
 .recent-works img {
   margin-bottom: 12px;
+}
+
+@media all and (min-width: 768px) {
+  .recent-works img {
+    width: 60%;
+  }
 }
 
 h2.recent-works,
@@ -291,6 +333,14 @@ div.featured-work {
   margin-bottom: 24px;
 }
 
+@media all and (min-width: 768px) {
+  div.featured-work {
+    grid-column: 1 / 4;
+    display: flex;
+    gap: 24px;
+  }
+}
+
 .featured-work li.tag {
   color: #091e42;
   border: 1px solid #8993a4;
@@ -306,6 +356,8 @@ div.card-works {
     ),
     url(../imgs/placeholder-img.png);
   display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
   flex-direction: column;
   justify-content: flex-end;
 }
