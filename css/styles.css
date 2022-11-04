@@ -684,6 +684,12 @@ li.skills-title {
   line-height: 24px;
 }
 
+@media all and (min-width: 768px) {
+  .contact-form input {
+    width: 100%;
+  }
+}
+
 .contact-form input::placeholder {
   color: #979493;
 }
@@ -697,6 +703,12 @@ li.skills-title {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
+}
+
+@media all and (min-width: 768px) {
+  .contact-form #message {
+    width: 100%;
+  }
 }
 
 .contact-form #message::placeholder {
