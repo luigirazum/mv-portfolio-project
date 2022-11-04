@@ -460,6 +460,11 @@ div.card-works {
 @media all and (min-width: 768px) {
   div.card-works {
     max-height: 285px;
+    transition: all 0.5s ease-out;
+  }
+
+  div.card-works:hover {
+    transform: scale(1.05);
   }
 }
 
@@ -550,7 +555,6 @@ div.about {
     width: 586px;
     left: 37%;
     top: 5%;
-    transform: scale(0.65);
   }
 }
 
