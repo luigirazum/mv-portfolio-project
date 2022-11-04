@@ -301,7 +301,7 @@ p.text-post {
 @media all and (min-width: 768px) {
   p.text-post {
     font-size: 12px;
-    line-height: 16px;
+    line-height: 20px;
     margin-bottom: 6px;
   }
 }
@@ -463,6 +463,8 @@ section.about-me {
 @media all and (min-width: 768px) {
   section.about-me {
     padding: 0 8%;
+    position: relative;
+    overflow: hidden;
   }
 }
 
@@ -476,11 +478,11 @@ div.about {
 
 @media all and (min-width: 768px) {
   div.about {
-    height: 563px;
     padding: 130px 0;
     display: flex;
     flex-direction: column;
     gap: 24px;
+    width: 45%;
   }
 }
 
@@ -494,6 +496,19 @@ div.about {
   top: 4380px;
 }
 
+@media all and (min-width: 768px) {
+  .about-bg-img {
+    background-image: url("../imgs/about-mebg-image_desktop.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 354px;
+    width: 586px;
+    left: 37%;
+    top: 5%;
+    transform: scale(0.65);
+  }
+}
+
 .about h2 {
   font-size: 72px;
   line-height: 88px;
@@ -501,13 +516,32 @@ div.about {
   color: #ff6b00;
 }
 
+@media all and (min-width: 768px) {
+  .about h2 {
+    font-size: 60px;
+    line-height: 62px;
+  }
+}
+
 .about p {
   color: #fff;
   margin-bottom: 24px;
 }
 
+@media all and (min-width: 768px) {
+  .about p {
+    margin-bottom: 12px;
+  }
+}
+
 .about-me hr {
   margin: 56px 24px;
+}
+
+@media all and (min-width: 768px) {
+  .about-me hr {
+    margin: 0 0;
+  }
 }
 
 .my-skills {
@@ -515,6 +549,16 @@ div.about {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+@media all and (min-width: 768px) {
+  .my-skills {
+    padding: 130px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: space-between;
+  }
 }
 
 .my-skills li {
@@ -531,6 +575,17 @@ li.skills-title {
   line-height: 44px;
   text-align: center;
   padding-bottom: 24px;
+}
+
+@media all and (min-width: 768px) {
+  li.lang-title,
+  li.frame-title,
+  li.skills-title {
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 12px;
+    text-align: left;
+  }
 }
 
 li.lang-title {
@@ -556,11 +611,35 @@ li.skills-title {
   text-align: center;
 }
 
+@media all and (min-width: 768px) {
+  .lang-card-skills,
+  .frame-card-skills,
+  .skill-card-skills {
+    width: 30%;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .lang-card-skills > ol > li,
+  .frame-card-skills > ol > li,
+  .skill-card-skills > ol > li {
+    text-align: left;
+  }
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
   padding: 120px 24px;
   gap: 58px;
+}
+
+@media all and (min-width: 768px) {
+  .contact-form {
+    padding: 130px 8%;
+    flex-direction: row;
+    gap: 5%;
+  }
 }
 
 .contact-form .title {
@@ -572,10 +651,27 @@ li.skills-title {
   text-align: center;
 }
 
+@media all and (min-width: 768px) {
+  .contact-form .title {
+    font-size: 24px;
+    line-height: 32px;
+    width: 40%;
+    text-align: left;
+  }
+}
+
 .contact-form .form {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+@media all and (min-width: 768px) {
+  .contact-form .form {
+    width: 55%;
+    align-items: flex-start;
+    gap: 18px;
+  }
 }
 
 .contact-form input {
@@ -620,6 +716,12 @@ li.skills-title {
   display: inline-block;
   margin: 0 auto;
   cursor: pointer;
+}
+
+@media all and (min-width: 768px) {
+  .contact-form #send {
+    margin: 0;
+  }
 }
 
 .contact-form #send:hover {
