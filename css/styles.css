@@ -41,6 +41,11 @@
   padding: 10px 12px;
   color: #fff;
   text-decoration: none;
+  transition: transform 1s;
+}
+
+.header a:hover {
+  transform: scale(1.2);
 }
 
 .navbar {
