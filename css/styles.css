@@ -102,6 +102,11 @@
   height: 24px;
   width: 24px;
   margin: 8px;
+  transition: all 0.5s ease-out;
+}
+
+.icon:hover {
+  transform: scale(1.1);
 }
 
 .headline {
@@ -132,6 +137,29 @@
     display: flex;
     flex-direction: column;
     gap: 18px;
+  }
+
+  .headline-content h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  50% {
+    margin-left: 5%;
+    width: 105%;
+  }
+
+  100% {
+    margin-left: 0%;
+    width: 100%;
   }
 }
 
@@ -200,6 +228,8 @@
   top: 50%;
 }
 
+.headline-bg-image {
+}
 @media all and (min-width: 768px) {
   .headline-bg-image {
     position: absolute;
@@ -414,8 +444,7 @@ div.featured-work:hover img {
 /* Works Cards */
 div.card-works {
   height: 386px;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
