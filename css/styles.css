@@ -388,6 +388,16 @@ div.featured-work {
   margin-bottom: 24px;
 }
 
+div.featured-work img {
+  transition: all 200ms ease-in;
+}
+
+div.featured-work:hover img {
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
 @media all and (min-width: 768px) {
   div.featured-work {
     grid-column: 1 / 4;
