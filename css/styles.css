@@ -400,9 +400,11 @@ div.featured-work {
 div.card-works {
   height: 386px;
   background:
-    linear-gradient(180.45deg,
+    linear-gradient(
+      180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 61.94%),
+      rgba(38, 38, 38, 0.9) 61.94%
+    ),
     url(../imgs/placeholder-img.png);
   display: flex;
   background-repeat: no-repeat;
@@ -577,7 +579,6 @@ li.skills-title {
 }
 
 @media all and (min-width: 768px) {
-
   li.lang-title,
   li.frame-title,
   li.skills-title {
@@ -600,9 +601,9 @@ li.skills-title {
   list-style-image: url(../imgs/skill-bullet.png);
 }
 
-.lang-card-skills>ol>li,
-.frame-card-skills>ol>li,
-.skill-card-skills>ol>li {
+.lang-card-skills > ol > li,
+.frame-card-skills > ol > li,
+.skill-card-skills > ol > li {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 22px;
@@ -612,7 +613,6 @@ li.skills-title {
 }
 
 @media all and (min-width: 768px) {
-
   .lang-card-skills,
   .frame-card-skills,
   .skill-card-skills {
@@ -621,10 +621,9 @@ li.skills-title {
 }
 
 @media all and (min-width: 768px) {
-
-  .lang-card-skills>ol>li,
-  .frame-card-skills>ol>li,
-  .skill-card-skills>ol>li {
+  .lang-card-skills > ol > li,
+  .frame-card-skills > ol > li,
+  .skill-card-skills > ol > li {
     text-align: left;
   }
 }
@@ -761,7 +760,7 @@ li.skills-title {
   margin-bottom: 10px;
 }
 
-#footer>ul {
+#footer > ul {
   display: flex;
   justify-content: center;
 }
