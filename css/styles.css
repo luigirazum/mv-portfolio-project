@@ -41,6 +41,11 @@
   padding: 10px 12px;
   color: #fff;
   text-decoration: none;
+  transition: transform 1s;
+}
+
+.header a:hover {
+  transform: scale(1.2);
 }
 
 .navbar {
@@ -97,6 +102,11 @@
   height: 24px;
   width: 24px;
   margin: 8px;
+  transition: all 0.5s ease-out;
+}
+
+.icon:hover {
+  transform: scale(1.1);
 }
 
 .headline {
@@ -127,6 +137,29 @@
     display: flex;
     flex-direction: column;
     gap: 18px;
+  }
+
+  .headline-content h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  50% {
+    margin-left: 5%;
+    width: 105%;
+  }
+
+  100% {
+    margin-left: 0%;
+    width: 100%;
   }
 }
 
@@ -383,6 +416,16 @@ div.featured-work {
   margin-bottom: 24px;
 }
 
+div.featured-work img {
+  transition: all 200ms ease-in;
+}
+
+div.featured-work:hover img {
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
 @media all and (min-width: 768px) {
   div.featured-work {
     grid-column: 1 / 4;
@@ -416,6 +459,11 @@ div.card-works {
 @media all and (min-width: 768px) {
   div.card-works {
     max-height: 285px;
+    transition: all 0.5s ease-out;
+  }
+
+  div.card-works:hover {
+    transform: scale(1.05);
   }
 }
 
@@ -506,7 +554,6 @@ div.about {
     width: 586px;
     left: 37%;
     top: 5%;
-    transform: scale(0.65);
   }
 }
 
