@@ -446,7 +446,7 @@ div.card-works {
     linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
-      rgba(0, 16, 255, 0.9) 61.94%
+      rgba(255, 165, 00, 0.9) 61.94%
     ),
     url(../imgs/placeholder-img.png);
   display: flex;
