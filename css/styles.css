@@ -389,7 +389,7 @@ li.tag {
   line-height: 24px;
   letter-spacing: 1px;
   text-decoration: none;
-  color: #fff;
+  color: #000;
   background-color: #ff6b00;
   height: 48px;
   padding: 12px;
@@ -767,7 +767,7 @@ li.skills-title {
   padding: 12px;
   background-color: #ff6b00;
   border: none;
-  color: #fff;
+  color: #000;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
