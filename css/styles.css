@@ -388,6 +388,7 @@ li.tag {
   line-height: 24px;
   letter-spacing: 1px;
   text-decoration: none;
+  border: 1px solid #000;
   color: #000;
   background-color: #ff6b00;
   height: 48px;
