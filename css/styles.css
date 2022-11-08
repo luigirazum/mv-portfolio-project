@@ -764,6 +764,7 @@ li.skills-title {
 }
 
 .contact-form #send {
+  border: 1px solid #000;
   padding: 12px;
   background-color: #ff6b00;
   border: none;
