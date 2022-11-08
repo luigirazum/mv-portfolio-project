@@ -140,9 +140,8 @@
   }
 
   .headline-content h1 {
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-name: slidein;
-    animation-iteration-count: infinite;
   }
 }
 
