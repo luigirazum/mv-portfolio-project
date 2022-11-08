@@ -284,6 +284,7 @@
         chat please get in touch.
       </h3>
       <form action="https://formspree.io/f/mlevonva" method="POST" class="form">
+        <label for="full_name" hidden>Full name</label>
         <input
           type="text"
           name="full_name"
@@ -292,6 +293,7 @@
           placeholder="Full name"
           maxlength="30"
         />
+        <label for="email" hidden>Email</label>
         <input
           type="email"
           name="email"
@@ -299,6 +301,7 @@
           required
           placeholder="Email address"
         />
+        <label for="message" hidden>Message</label>
         <textarea
           name="message"
           id="message"

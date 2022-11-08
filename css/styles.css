@@ -140,9 +140,8 @@
   }
 
   .headline-content h1 {
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-name: slidein;
-    animation-iteration-count: infinite;
   }
 }
 
@@ -389,7 +388,7 @@ li.tag {
   line-height: 24px;
   letter-spacing: 1px;
   text-decoration: none;
-  color: #fff;
+  color: #000;
   background-color: #ff6b00;
   height: 48px;
   padding: 12px;
@@ -397,6 +396,7 @@ li.tag {
 
 @media all and (min-width: 768px) {
   .btn {
+    border: 1px solid #000;
     font-size: 15px;
     line-height: 18px;
     letter-spacing: 0.5px;
@@ -406,7 +406,7 @@ li.tag {
 }
 
 .btn:hover {
-  background-color: #fff5e1;
+  background-color: #000;
   color: #ff6b00;
   border: 1px solid #f55800;
 }
@@ -446,7 +446,7 @@ div.card-works {
     linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 61.94%
+      rgba(255, 165, 00, 0.9) 61.94%
     ),
     url(../imgs/placeholder-img.png);
   display: flex;
@@ -454,29 +454,6 @@ div.card-works {
   background-size: cover;
   flex-direction: column;
   justify-content: flex-end;
-}
-
-@media all and (min-width: 768px) {
-  div.card-works {
-    max-height: 285px;
-    transition: all 0.5s ease-out;
-  }
-
-  div.card-works:hover {
-    transform: scale(1.05);
-  }
-}
-
-.card-works div.right-block {
-  padding: 8px 16px;
-  margin-bottom: 14px;
-}
-
-@media all and (min-width: 768px) {
-  .card-works div.right-block {
-    padding: 0 8px;
-    margin-bottom: 0;
-  }
 }
 
 .card-works h3.title-post {
@@ -491,6 +468,43 @@ div.card-works {
   color: #fff;
   background-color: rgba(255, 255, 255, 0.24);
   display: inline-block;
+}
+
+@media all and (min-width: 768px) {
+  div.card-works {
+    max-height: 285px;
+    transition: all 0.5s ease-out;
+  }
+
+  div.card-works:hover {
+    transform: scale(1.05);
+    color: #000;
+    background:
+      linear-gradient(
+        180.45deg,
+        rgba(38, 38, 38, 0) 0.75%,
+        rgba(65, 64, 64, 0) 61.94%
+      ),
+      url(../imgs/placeholder-img.png);
+  }
+
+  .card-works h3.title-post,
+  .card-works p.text-post,
+  .card-works li.tag {
+    color: #000;
+  }
+}
+
+.card-works div.right-block {
+  padding: 8px 16px;
+  margin-bottom: 14px;
+}
+
+@media all and (min-width: 768px) {
+  .card-works div.right-block {
+    padding: 0 8px;
+    margin-bottom: 0;
+  }
 }
 
 li.tag:last-child {
@@ -767,7 +781,7 @@ li.skills-title {
   padding: 12px;
   background-color: #ff6b00;
   border: none;
-  color: #fff;
+  color: #000;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -780,19 +794,20 @@ li.skills-title {
 
 @media all and (min-width: 768px) {
   .contact-form #send {
+    border: 1px solid #000;
     margin: 0;
   }
 }
 
 .contact-form #send:hover {
   border: 1px solid #f55800;
-  background-color: #fff5e1;
+  background-color: #000;
   color: #f55800;
 }
 
 .contact-form #send:active {
-  background-color: #e05304;
-  color: #fff;
+  background-color: #f55800;
+  color: #000;
 }
 
 .contact-form #send:disabled {

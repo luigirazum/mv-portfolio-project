@@ -20,14 +20,11 @@
 - Twitter: [@LuigiRazum](https://twitter.com/LuigiRazum)
 - LinkedIn: [Luis Raul Zubia Maciel](https://linkedin.com/in/luiszubia)
 
-👤 Shahadat Hossain
+👤 Glenda Diaz
 
-- GitHub: [@shahadat3669
-  ](https://github.com/shahadat3669)
-- Twitter: [@shahadat3669
-  ](https://twitter.com/shahadat3669)
-- LinkedIn: [Shahadat Hossain
-  ](https://linkedin.com/in/shahadat3669)
+- GitHub: [@Gdiazdiaz
+  ](https://github.com/Gdiazdiaz)
+
 
 ## 🤝 Contributing
 

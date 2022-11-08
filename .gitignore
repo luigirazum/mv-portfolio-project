@@ -3,3 +3,6 @@ node_modules
 
 # Ignore ZoneIdentifier files
 *ZoneIdentifier
+
+# Ignore .vscode folder
+.vscode
