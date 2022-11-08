@@ -388,7 +388,6 @@ li.tag {
   line-height: 24px;
   letter-spacing: 1px;
   text-decoration: none;
-  border: 1px solid #000;
   color: #000;
   background-color: #ff6b00;
   height: 48px;
@@ -397,6 +396,7 @@ li.tag {
 
 @media all and (min-width: 768px) {
   .btn {
+    border: 1px solid #000;
     font-size: 15px;
     line-height: 18px;
     letter-spacing: 0.5px;
@@ -456,6 +456,20 @@ div.card-works {
   justify-content: flex-end;
 }
 
+.card-works h3.title-post {
+  color: #fff;
+}
+
+.card-works p.text-post {
+  color: #fff;
+}
+
+.card-works li.tag {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.24);
+  display: inline-block;
+}
+
 @media all and (min-width: 768px) {
   div.card-works {
     max-height: 285px;
@@ -472,6 +486,13 @@ div.card-works {
     ),
     url(../imgs/placeholder-img.png);
   }
+
+  .card-works h3.title-post,
+  .card-works p.text-post,
+  .card-works li.tag {
+    color: #000;
+  }
+
 }
 
 .card-works div.right-block {
@@ -486,19 +507,6 @@ div.card-works {
   }
 }
 
-.card-works h3.title-post {
-  color: #fff;
-}
-
-.card-works p.text-post {
-  color: #fff;
-}
-
-.card-works li.tag {
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.24);
-  display: inline-block;
-}
 
 li.tag:last-child {
   margin-right: 0;
@@ -771,7 +779,6 @@ li.skills-title {
 }
 
 .contact-form #send {
-  border: 1px solid #000;
   padding: 12px;
   background-color: #ff6b00;
   border: none;
@@ -788,6 +795,7 @@ li.skills-title {
 
 @media all and (min-width: 768px) {
   .contact-form #send {
+    border: 1px solid #000;
     margin: 0;
   }
 }
