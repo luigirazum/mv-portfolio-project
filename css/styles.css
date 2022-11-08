@@ -405,7 +405,7 @@ li.tag {
 }
 
 .btn:hover {
-  background-color: #fff5e1;
+  background-color: #000;
   color: #ff6b00;
   border: 1px solid #f55800;
 }
@@ -785,13 +785,13 @@ li.skills-title {
 
 .contact-form #send:hover {
   border: 1px solid #f55800;
-  background-color: #fff5e1;
+  background-color: #000;
   color: #f55800;
 }
 
 .contact-form #send:active {
-  background-color: #e05304;
-  color: #fff;
+  background-color: #f55800;
+  color: #000;
 }
 
 .contact-form #send:disabled {
