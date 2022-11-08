@@ -445,7 +445,7 @@ div.card-works {
     linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 61.94%
+      rgba(65, 64, 64, 0.9) 61.94%
     ),
     url(../imgs/placeholder-img.png);
   display: flex;
@@ -463,6 +463,13 @@ div.card-works {
 
   div.card-works:hover {
     transform: scale(1.05);
+    background: linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgba(65, 64, 64, 0) 61.94%
+    ),
+    url(../imgs/placeholder-img.png);
+
   }
 }
 
