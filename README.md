@@ -11,6 +11,11 @@
 
 [Luis Zubia - Portfolio](https://luigirazum.github.io/)
 
+## Walkthrough
+
+This is a very short video about how the project was made and the features implemented on it.
+
+[Walkthrough video 🎥](https://www.loom.com/share/f4133e12aa98400d80522ba9fee5303a)
 
 ## Authors
 
