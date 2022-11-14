@@ -79,6 +79,40 @@
   }
 }
 
+/* Styles for Mobile menu */
+.show_menu {
+  display: flex;
+}
+
+.hide_menu {
+  display: none;
+}
+
+#mobile_menu {
+  background-color: #3c3a39;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5%;
+  height: 100vh;
+}
+
+#mobile_menu a {
+  color: #fff;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-decoration: none;
+  border-bottom: 1px solid #6f6c6b;
+  padding: 10px;
+}
+
+#mobile_menu .btn-close {
+  border-bottom: none;
+  align-self: flex-end;
+}
+
 /* Styles for Headline Section */
 .headline p {
   font-family: "Poppins", sans-serif;
@@ -552,22 +586,23 @@ div.about {
 .about-bg-img {
   background-image: url("../imgs/about-mebg-image.png");
   background-repeat: no-repeat;
-  position: absolute;
+  /* position: absolute;
   height: 259px;
   width: 160px;
   right: 0;
-  top: 4380px;
+  top: 4380px; */
 }
 
 @media all and (min-width: 768px) {
   .about-bg-img {
     background-image: url("../imgs/about-mebg-image_desktop.png");
     background-repeat: no-repeat;
-    position: absolute;
+    background-position-x: right;
+    /* position: absolute;
     height: 354px;
     width: 586px;
     left: 37%;
-    top: 5%;
+    top: 5%; */
   }
 }
 
