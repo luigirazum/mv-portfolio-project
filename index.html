@@ -9,17 +9,17 @@
     <title>Luis Zubia First Porfolio</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header show_menu">
       <a href="#">Luis Zubia</a>
       <nav class="navbar">
-        <a href="#">
+        <a class="menu_icon" href="#">
           <img class="icon" src="imgs/menu-icon.png" alt="Menu icon" />
         </a>
       </nav>
       <nav class="navbar-desktop">
-        <a href="#">Portfolio</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a  href="#portfolio">Portfolio</a>
+        <a  href="#about">About</a>
+        <a  href="#contact">Contact</a>
         <div class="mail-icon">
           <a href="#">
             <img src="imgs/mail_icon.svg" alt="Mail icon" />
@@ -27,6 +27,15 @@
         </div>
       </nav>
     </header>
+
+    <section class="hide_menu" id="mobile_menu">
+        <a class="btn-close" href="#">
+          <img src="imgs/close_icon.png" alt="close mobile menu icon" />
+        </a>
+        <a class="portfolioLink" href="#portfolio">Portfolio</a>
+        <a class="aboutLink" href="#about">About</a>
+        <a class="contactLink" href="#contact">Contact</a>
+    </section>
 
     <section class="headline">
       <div class="headline-content">
@@ -76,7 +85,7 @@
       <div class="headline-bg-image"></div>
     </section>
 
-    <section class="recent-works">
+    <section id="portfolio" class="recent-works">
       <div class="title">
         <h2 class="recent-works">My Recent Works</h2>
         <hr />
@@ -221,7 +230,7 @@
       </div>
     </section>
 
-    <section class="about-me">
+    <section id="about" class="about-me">
       <div class="about">
         <h2>About me</h2>
         <p class="text-post">
@@ -278,7 +287,7 @@
       </div>
     </section>
 
-    <section class="contact-form">
+    <section id="contact" class="contact-form">
       <h3 class="title">
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
@@ -363,5 +372,6 @@
         </li>
       </ul>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
