@@ -6,7 +6,6 @@ const portfolioLink = document.querySelector('.portfolioLink');
 const aboutLink = document.querySelector('.aboutLink');
 const contactLink = document.querySelector('.contactLink');
 
-
 menuButton.addEventListener('click', () => {
   mobileMenu.classList.replace('hide_menu', 'show_menu');
   header.classList.replace('show_menu', 'hide_menu');
@@ -23,11 +22,11 @@ portfolioLink.addEventListener('click', () => {
 });
 
 aboutLink.addEventListener('click', () => {
-    mobileMenu.classList.replace('show_menu', 'hide_menu');
-    header.classList.replace('hide_menu', 'show_menu');
-  });
+  mobileMenu.classList.replace('show_menu', 'hide_menu');
+  header.classList.replace('hide_menu', 'show_menu');
+});
 
-  contactLink.addEventListener('click', () => {
-    mobileMenu.classList.replace('show_menu', 'hide_menu');
-    header.classList.replace('hide_menu', 'show_menu');
-  });
+contactLink.addEventListener('click', () => {
+  mobileMenu.classList.replace('show_menu', 'hide_menu');
+  header.classList.replace('hide_menu', 'show_menu');
+});

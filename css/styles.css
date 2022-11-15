@@ -98,7 +98,7 @@
 
 #mobile_menu a {
   color: #fff;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -116,7 +116,7 @@
 /* Styles for Headline Section */
 .headline p {
   font-family: "Poppins", sans-serif;
-  font-style: regular;
+  font-style: normal;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -586,6 +586,7 @@ div.about {
 .about-bg-img {
   background-image: url("../imgs/about-mebg-image.png");
   background-repeat: no-repeat;
+
   /* position: absolute;
   height: 259px;
   width: 160px;
@@ -598,6 +599,7 @@ div.about {
     background-image: url("../imgs/about-mebg-image_desktop.png");
     background-repeat: no-repeat;
     background-position-x: right;
+
     /* position: absolute;
     height: 354px;
     width: 586px;
