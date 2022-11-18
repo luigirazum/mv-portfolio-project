@@ -902,8 +902,6 @@ li.skills-title {
   background-color: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(0.5px);
   z-index: 3;
-
-  /* display: flex; */
   justify-content: center;
   align-items: center;
 }
@@ -918,6 +916,17 @@ li.skills-title {
   gap: 0.8em;
 }
 
+.popup-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+}
+
+.popup-card-body {
+  height: 60%;
+  margin-top: 1.5em;
+}
+
 .popup-card-title {
   display: flex;
   justify-content: space-between;
@@ -928,8 +937,7 @@ li.skills-title {
   font-family: 'Roboto', serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 1.8em;
-  line-height: 2em;
+  font-size: 1.5em;
   color: #172b4d;
 }
 
@@ -939,15 +947,21 @@ li.skills-title {
   font-style: normal;
   font-weight: 600;
   font-size: 0.8em;
-  line-height: 1.4em;
+  line-height: 1.3em;
   color: #3c3a39;
   display: flex;
-  gap: 0.7em;
+  gap: 0.8em;
+}
+
+.popup-card-tags .tag {
+  margin: 0;
 }
 
 .popup-card .popup-card-img {
-  width: 100%;
-  background-size: contain;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .popup-card-footer {
@@ -973,10 +987,11 @@ li.skills-title {
   .popup-card-body {
     display: flex;
     gap: 1em;
+    height: 70%;
   }
 
   .popup-card-body .popup-card-img {
-    min-width: 25em;
+    width: 100%;
   }
 
   .popup-card-footer {
@@ -985,6 +1000,7 @@ li.skills-title {
     justify-content: space-between;
     align-items: flex-start;
     font-size: 18px;
+    width: 85%;
   }
 
   .popup-card-links ul {
