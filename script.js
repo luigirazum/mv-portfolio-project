@@ -252,7 +252,7 @@ emailField.addEventListener('input', () => {
     errorField.className = 'error';
   } else {
     errorField.textContent = 'Just lowecase letters allowed in email';
-    errorField.className = "error active"
+    errorField.className = 'error active';
   }
 });
 
