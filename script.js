@@ -43,7 +43,7 @@ const works = [
     featImage: 'imgs/img-placeholder-fw.png',
     technologies: ['css', 'html', 'bootstrap', 'Ruby'],
     liveLink: 'https://luigirazum.github.io/',
-    sourceLink: 'https://github.com/luigirazum/mv-portfolio-project'
+    sourceLink: 'https://github.com/luigirazum/mv-portfolio-project',
   },
   {
     id: 'work1',
@@ -104,7 +104,7 @@ const works = [
     technologies: ['html', 'css', 'bootstrap', 'Ruby'],
     liveLink: 'https://luigirazum.github.io/',
     sourceLink: 'https://github.com/luigirazum/mv-portfolio-project',
-  }
+  },
 ];
 
 // create li-tags for technologies in each card
@@ -175,3 +175,65 @@ for (let i = 0; i < works.length; i += 1) {
     worksList.innerHTML += cardWorkTemplate;
   }
 }
+
+function getWork(id) {
+  for (let i = 0; i < works.length; i += 1) {
+    if (works[i].id === id) {
+      return works[i];
+    }
+  }
+  return false;
+}
+// generar pop-up windows
+function showPopUp(id = null) {
+  if (id !== null) {
+    const work = getWork(id);
+    const popuptemplate = `
+      <div class="popup-card" id="${work.id}">
+        <div class="popup-card-header">
+          <h3 class="popup-card-title">
+            ${work.name}
+            <a class="popup-card-close" onclick="closepopup('${work.id}');">
+            <img src="imgs/close_icon.png" alt="close popup window"></a>
+          </h3>
+          <ul class="popup-card-tags">
+           ${generateLiTags(work.technologies)}
+          </ul>
+        </div>
+        <div class="popup-card-body">
+          <img class="popup-card-img" src="${work.featImage}" alt="project screenshot">
+          <div class="popup-card-footer">
+            <p>${work.description}</p>
+            <div class="popup-card-links">
+              <ul>
+                <li>
+                  <a href="${work.liveLink}">See Live</a>
+                  <img src="imgs/live-pop-icon.png" alt="live project icon">
+                </li>
+                <li>
+                  <a href="${work.sourceLink}">See Source</a>
+                  <img src="imgs/gh-pop-icon.png" alt="github repository icon">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>`;
+
+    const popUpList = document.querySelector('body article');
+    popUpList.innerHTML += popuptemplate;
+    popUpList.classList.replace('hide_menu', 'show_menu');
+  }
+}
+showPopUp();
+
+// create event for close 'x' buttons of popups
+function closepopup(id = null) {
+  if (id !== null) {
+    const popUpList = document.querySelector('body #popup-window');
+    const popUpCard = document.querySelector('body #popup-window .popup-card');
+    popUpList.classList.replace('show_menu', 'hide_menu');
+    popUpCard.parentNode.removeChild(popUpCard);
+  }
+}
+closepopup();
