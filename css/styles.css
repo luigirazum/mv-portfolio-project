@@ -32,6 +32,16 @@
   }
 }
 
+.popup-card-footer a {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  margin-right: 0.2em;
+  color: #fff;
+  text-decoration: none;
+}
+
 .header a {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -685,6 +695,21 @@ li.skills-title {
   list-style-image: url(../imgs/skill-bullet.png);
 }
 
+.popup-card-tags li {
+  display: inline-block;
+  border: 1px solid #979493;
+  padding: 0.5em 0.8em;
+}
+
+.popup-card-footer li {
+  list-style: none;
+  background-color: #ff6b00;
+  display: inline-block;
+  padding: 0.6em 0.9em;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .lang-card-skills > ol > li,
 .frame-card-skills > ol > li,
 .skill-card-skills > ol > li {
@@ -845,6 +870,12 @@ li.skills-title {
   margin-bottom: 10px;
 }
 
+.popup-card-footer ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8em;
+}
+
 #footer > ul {
   display: flex;
   justify-content: center;
@@ -868,10 +899,11 @@ li.skills-title {
   width: 100vw;
   top: 0;
   right: 0;
-  background-color: rgba(0,0,0,0.95);
+  background-color: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(0.5px);
   z-index: 3;
-  display: flex;
+
+  /* display: flex; */
   justify-content: center;
   align-items: center;
 }
@@ -903,7 +935,7 @@ li.skills-title {
 
 .popup-card-tags {
   list-style: none;
-  font-family: 'Poppins';
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 600;
   font-size: 0.8em;
@@ -913,14 +945,9 @@ li.skills-title {
   gap: 0.7em;
 }
 
-.popup-card-tags li {
-  display: inline-block;
-  border: 1px solid #979493;
-  padding: 0.5em 0.8em;
-}
-
 .popup-card .popup-card-img {
   width: 100%;
+  background-size: contain;
 }
 
 .popup-card-footer {
@@ -932,32 +959,6 @@ li.skills-title {
   font-weight: 400;
   font-size: 0.9em;
   line-height: 1.3em;
-}
-
-.popup-card-footer ul {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 0.8em;
-}
-
-.popup-card-footer li {
-  list-style: none;
-  background-color: #ff6b00;
-  display: inline-block;
-  padding: 0.6em 0.9em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.popup-card-footer a {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 3%;
-  margin-right: 0.2em;
-  color: #fff;
-  text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {
