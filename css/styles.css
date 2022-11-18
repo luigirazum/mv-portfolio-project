@@ -1008,3 +1008,16 @@ li.skills-title {
     gap: 1.5em;
   }
 }
+
+#contact .error {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  transition: color 500ms ease-in-out;
+}
+
+#contact .error.active {
+  color: #ff6b00;
+}
