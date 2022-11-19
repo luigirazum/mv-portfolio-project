@@ -238,3 +238,30 @@ function closepopup(id = null) {
   }
 }
 closepopup();
+
+// Form validation: email must be in lowercase
+const contactForm = document.querySelector('.form');
+const emailField = document.getElementById('email');
+const errorField = contactForm.querySelector('.error');
+
+const isValid = (email) => email.toLowerCase() === email;
+
+emailField.addEventListener('input', () => {
+  if (isValid(emailField.value)) {
+    errorField.textContent = '';
+    errorField.className = 'error';
+  } else {
+    errorField.textContent = 'Just lowecase letters allowed in email';
+    errorField.className = 'error active';
+  }
+});
+
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  if (isValid(emailField.value)) {
+    errorField.textContent = '';
+    errorField.className = 'error';
+    contactForm.submit();
+  }
+});
