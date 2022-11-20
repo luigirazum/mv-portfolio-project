@@ -141,7 +141,7 @@ for (let i = 0; i < works.length; i += 1) {
           </ul>
 
           <div class="action">
-          <a class="btn" onclick="showPopUp('${works[i].id}');">See Project</a>
+          <a class="btn" click="showPopUp('${works[i].id}');">See Project</a>
           </div>
         </div>
       </div>
@@ -168,7 +168,7 @@ for (let i = 0; i < works.length; i += 1) {
         </div>
 
         <div class="action">
-          <a class="btn" onclick="showPopUp('${works[i].id}');">See Project</a>
+          <a class="btn" click="showPopUp('${works[i].id}');">See Project</a>
         </div>
       </div>
     `;
@@ -193,7 +193,7 @@ function showPopUp(id = null) {
         <div class="popup-card-header">
           <h3 class="popup-card-title">
             ${work.name}
-            <a class="popup-card-close" onclick="closepopup('${work.id}');">
+            <a class="popup-card-close" click="closepopup('${work.id}');">
             <img src="imgs/close_icon.png" alt="close popup window"></a>
           </h3>
           <ul class="popup-card-tags">
