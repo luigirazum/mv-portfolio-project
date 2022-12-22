@@ -9,7 +9,7 @@
 
 ## Live Demo
 
-[Luis Zubia - Portfolio](https://luigirazum.github.io/)
+[Luis Zubia - Portfolio](https://luigirazum.github.io/mv-portfolio-project/)
 
 ## Walkthrough
 
