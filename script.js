@@ -35,25 +35,26 @@ contactLink.addEventListener('click', () => {
 const works = [
   {
     id: 'featureWork',
-    name: 'Multi-Post Stories',
-    description: `A daily selection of privately personalized reads; no accounts or
-                  sign-ups required. has been the industry's standard dummy text
-                  ever since the 1500s, when an unknown printer took a standard
-                  dummy text.`,
-    featImage: 'imgs/img-placeholder-fw.png',
-    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
-    liveLink: 'https://luigirazum.github.io/',
-    sourceLink: 'https://github.com/luigirazum/mv-portfolio-project',
+    name: 'Minimalist ToDo-List',
+    description: `This is a simple minimalist ToDo App which you can use to track
+                  your daily pending tasks. Adding, Deleting or Marking a task as
+                  done in its very intuitive interface. Click on the the links below
+                  to see the project source code or the live running version.`,
+    featImage: 'imgs/screens/mintodolist-ss.png',
+    technologies: ['CSS', 'HTML', 'JavaScript', 'WebPack'],
+    liveLink: 'https://luigirazum.github.io/mv-mintodolist/',
+    sourceLink: 'https://github.com/luigirazum/mv-mintodolist',
   },
   {
     id: 'work1',
     name: 'Profesional Art Printing Data',
-    description: `A daily selection of privately personalized reads; no accounts or
-                  sign-ups required. has been the industry's standard.`,
+    description: `This is a simple minimalist ToDo App which you can use to track
+                  your daily pending tasks. Adding, Deleting or Marking a task as
+                  done in its very intuitive interface.`,
     featImage: '../imgs/placeholder-img.png',
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    liveLink: 'https://luigirazum.github.io/',
-    sourceLink: 'https://github.com/luigirazum/mv-portfolio-project',
+    technologies: ['html', 'css', 'JavaScript'],
+    liveLink: 'https://luigirazum.github.io/mv-mintodolist/',
+    sourceLink: 'https://github.com/luigirazum/mv-mintodolist',
   },
   {
     id: 'work2',
