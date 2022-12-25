@@ -31,6 +31,20 @@ contactLink.addEventListener('click', () => {
   header.classList.replace('hide_menu', 'show_menu');
 });
 
+const detailsMessage = `Click on the link below to see more details about
+                      this project.`;
+const inviteMessage = `Click on the links below to see the project source code
+                      or the live running version.`;
+const ghProfile = 'luigirazum';
+
+function sourceLink() {
+  return `https://github.com/${ghProfile}/${this.projectRepo}`;
+}
+
+function liveLink() {
+  return `https://${ghProfile}.github.io/${this.projectRepo}/`;
+}
+
 // Array of project objects to load the content dynamically
 const works = [
   {
@@ -38,73 +52,45 @@ const works = [
     name: 'Minimalist ToDo-List',
     description: `This is a simple minimalist ToDo App which you can use to track
                   your daily pending tasks. Adding, Deleting or Marking a task as
-                  done in its very intuitive interface. Click on the the links below
-                  to see the project source code or the live running version.`,
+                  done in its very intuitive interface.`,
     featImage: 'imgs/screens/mintodolist-ss.png',
-    technologies: ['CSS', 'HTML', 'JavaScript', 'WebPack'],
-    liveLink: 'https://luigirazum.github.io/mv-mintodolist/',
-    sourceLink: 'https://github.com/luigirazum/mv-mintodolist',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'WebPack'],
+    projectRepo: 'mv-mintodolist',
   },
   {
     id: 'work1',
-    name: 'Profesional Art Printing Data',
-    description: `This is a simple minimalist ToDo App which you can use to track
-                  your daily pending tasks. Adding, Deleting or Marking a task as
-                  done in its very intuitive interface.`,
-    featImage: '../imgs/placeholder-img.png',
-    technologies: ['html', 'css', 'JavaScript'],
-    liveLink: 'https://luigirazum.github.io/mv-mintodolist/',
-    sourceLink: 'https://github.com/luigirazum/mv-mintodolist',
+    name: 'Awesome Books',
+    description: `This is a Single Page App that allows you to do a list of Books and
+                  its Author, that list persist even if you leave the App. You can Add
+                  new books or Delete a book from the list clicking on its Delete button.
+                  You can navigate through the App using the top menu.`,
+    featImage: 'imgs/screens/awesomebooks-ss.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    projectRepo: 'mv-awesomebooks-es6',
   },
   {
     id: 'work2',
-    name: 'Data Dashboard Healthcare',
-    description: `A daily selection of privately personalized reads; no accounts or
-                  sign-ups required. has been the industry's standard.`,
-    featImage: '../imgs/placeholder-img.png',
-    technologies: ['html', 'javascript', 'css'],
-    liveLink: 'https://luigirazum.github.io/',
-    sourceLink: 'https://github.com/luigirazum/mv-portfolio-project',
+    name: 'Developer Week',
+    description: `DevWeek is a project website that lists Conferences and Events for
+                  Developers. It is composed by a Home page and an About page, in the Home
+                  page besides viewing the main event details you can see a series of Cards
+                  displaying information about the Speakers that will feature the Conferences.
+                  The About page show general info about the event.`,
+    featImage: 'imgs/screens/devweek-ss.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    projectRepo: 'mv-devweek',
   },
   {
     id: 'work3',
-    name: 'Website Protfolio',
-    description: `A daily selection of privately personalized reads; no accounts or
-                  sign-ups required. has been the industry's standard.`,
-    featImage: '../imgs/placeholder-img.png',
-    technologies: ['html', 'javascript', 'Ruby'],
-    liveLink: 'https://luigirazum.github.io/',
-    sourceLink: 'https://github.com/luigirazum/mv-portfolio-project',
-  },
-  {
-    id: 'work4',
-    name: 'Profesional Art Data Printing',
-    description: `A daily selection of privately personalized reads; no accounts or
-                  sign-ups required. has been the industry's standard.`,
-    featImage: '../imgs/placeholder-img.png',
-    technologies: ['html', 'css', 'Ruby'],
-    liveLink: 'https://luigirazum.github.io/',
-    sourceLink: 'https://github.com/luigirazum/mv-portfolio-project',
-  },
-  {
-    id: 'work5',
-    name: 'Healthcare Data Dashboard',
-    description: `A daily selection of privately personalized reads; no accounts or
-                  sign-ups required. has been the industry's standard.`,
-    featImage: '../imgs/placeholder-img.png',
-    technologies: ['html', 'javascript', 'bootstrap'],
-    liveLink: 'https://luigirazum.github.io/',
-    sourceLink: 'https://github.com/luigirazum/mv-portfolio-project',
-  },
-  {
-    id: 'work6',
-    name: 'My Website Portfolio',
-    description: `A daily selection of privately personalized reads; no accounts or
-                  sign-ups required. has been the industry's standard.`,
-    featImage: '../imgs/placeholder-img.png',
-    technologies: ['html', 'css', 'bootstrap', 'Ruby'],
-    liveLink: 'https://luigirazum.github.io/',
-    sourceLink: 'https://github.com/luigirazum/mv-portfolio-project',
+    name: 'Personal Portfolio Website',
+    description: `This is my first completed project as Full-Stack Software Developer in training.
+                  It is a Personal Portfolio Website that shows information about the creator, lists
+                  the projects that the creator has made, you click on a project and a PopUp window
+                  appears so you can go to the live version or the source code of the project. It is
+                  still in development.`,
+    featImage: 'imgs/screens/portfolio-ss.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    projectRepo: 'mv-portfolio-project',
   },
 ];
 
@@ -124,6 +110,8 @@ function generateLiTags(technologies) {
 const worksList = document.querySelector('#portfolio .works');
 
 for (let i = 0; i < works.length; i += 1) {
+  works[i].sourceLink = sourceLink;
+  works[i].liveLink = liveLink;
   if (works[i].id === 'featureWork') {
     const featWorkTemplate = `
       <div class="featured-work">
@@ -135,7 +123,7 @@ for (let i = 0; i < works.length; i += 1) {
         <div class="right-block">
           <h3 class="title-post">${works[i].name}</h3>
           <p class="text-post">
-            ${works[i].description}
+            ${works[i].description} ${detailsMessage}
           </p>
           <ul class="tags">
           ${generateLiTags(works[i].technologies)}
@@ -152,16 +140,16 @@ for (let i = 0; i < works.length; i += 1) {
     const cardWorkTemplate = `
       <div class="card-works" style=
       "background:
-         linear-gradient(
-         180.45deg,
-         rgba(38, 38, 38, 0) 0.75%,
-         rgba(255, 165, 00, 0.9) 61.94%
-        ),
+          linear-gradient(
+          180.45deg,
+          rgba(38, 38, 38, 0) 0.75%,
+          rgba(255, 165, 00, 0.9) 61.94%
+        ), center / 70% no-repeat
         url(${works[i].featImage});">
       <div class="right-block">
       <h3 class="title-post">${works[i].name}</h3>
           <p class="text-post">
-            ${works[i].description}
+            ${works[i].description} ${detailsMessage}
           </p>
           <ul class="tags">
           ${generateLiTags(works[i].technologies)}
@@ -198,22 +186,22 @@ function showPopUp(id = null) {
             <img src="imgs/close_icon.png" alt="close popup window"></a>
           </h3>
           <ul class="popup-card-tags">
-           ${generateLiTags(work.technologies)}
+            ${generateLiTags(work.technologies)}
           </ul>
         </div>
         <div class="popup-card-body">
           <div class="popup-card-img" style="background-image:
           url('${work.featImage}')"></div>
           <div class="popup-card-footer">
-            <p>${work.description}</p>
+            <p>${work.description} ${inviteMessage}</p>
             <div class="popup-card-links">
               <ul>
                 <li>
-                  <a href="${work.liveLink}">See Live</a>
+                  <a href="${work.liveLink()}">See Live</a>
                   <img src="imgs/live-pop-icon.png" alt="live project icon">
                 </li>
                 <li>
-                  <a href="${work.sourceLink}">See Source</a>
+                  <a href="${work.sourceLink()}">See Source</a>
                   <img src="imgs/gh-pop-icon.png" alt="github repository icon">
                 </li>
               </ul>
