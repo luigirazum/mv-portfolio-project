@@ -151,6 +151,13 @@
 
 .icon:hover {
   transform: scale(1.1);
+  filter:
+    sepia(100%)
+    saturate(350%)
+    brightness(45%)
+    hue-rotate(320deg)
+    opacity(1)
+    drop-shadow(0 0 0 rgb(240, 80, 7));
 }
 
 .headline {
@@ -488,7 +495,8 @@ div.card-works {
   height: 386px;
   display: flex;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 90% auto;
+  background-position: top;
   flex-direction: column;
   justify-content: flex-end;
 }
@@ -960,8 +968,8 @@ li.skills-title {
 .popup-card .popup-card-img {
   height: 80%;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: top;
 }
 
 .popup-card-footer {
